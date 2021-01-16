@@ -9,4 +9,5 @@ plusButton.onclick = function() {
   count += 1
   // count を表示
   display.textContent = count
+  console.dir(display) 
 }
