@@ -3,7 +3,6 @@ const counter = document.getElementById("counter")
 const output = document.getElementById("output")
 let number = 0
 
-
 const countUp = function () {
   number += 1
   counter.textContent = number

@@ -23,3 +23,9 @@ const akira = {
   subjects: ["土木", "経済学"],
   isSleepy: true,
 }
+
+// if (true) { console.log("こんにちは") }
+// if (5 < 3) { console.log("こんにちは") }
+// if (false) { console.log("こんばんは") } else { console.log("こんにちは") }
+// if ("こんにちは") console.log("こんにちは")
+// if (0) { console.log("こんにちは") }
