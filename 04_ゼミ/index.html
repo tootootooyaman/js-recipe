@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Week1ゼミ 7/4(日)</h1>
+    <h2>Contents</h2>
+    <div id="contents">
+      <ul>
+        <li>
+          小テストの解説
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSccdIN7l4Wq9kVzuA1k60VmbcVB_zBTVlk-H9ocxbEosECzXw/viewform"
+            >キックオフ小テスト</a
+          >
+        </li>
+        <li>クイズアプリを作ろう！</li>
+        <li>データ型とは!</li>
+        <div>
+          <div>String(文字列), Number(数値), boolean(真偽値)</div>
+          <div>function(関数) 引数、返り値</div>
+          <div>array(配列) [0,1,2,3]</div>
+          <div>Object(オブジェクト) {key: value}</div>
+        </div>
+        <h3>~休憩~</h3>
+        <li>DOMとは?</li>
+        <div>Document Object Model</div>
+        <div>console.dir(document)</div>
+        <li>ペアワーク「FizzBuzz」</li>
+        <div>Codesandboxでペアワーク, for文, if文</div>
+        <li>終わりの会</li>
+      </ul>
+    </div>
+
+    <div>------解説ゾーン------</div>
+    <!-- 
+    <button id="nice-button">クリックしてね</button> -->
+
+    <h2>問題！ででん！</h2>
+    <div id="title">僕の好きな作品はどれでしょう？</div>
+    <button id="onepiece">ワンピース</button>
+    <button id="kingdom">キングダム</button>
+    <button id="heroaca">ヒロアカ</button>
+    <div id="display"></div>
+
+    <script>
+      const onepiece = document.getElementById("onepiece")
+      const kingdom = document.getElementById("kingdom")
+      const heroaca = document.getElementById("heroaca")
+      const display = document.getElementById("display")
+
+      onepiece.onclick = function() {
+        display.textContent = "不正解！でも嫌いじゃないよ"
+      }
+      kingdom.onclick = function() {
+        display.textContent = "正解！推しは桓騎将軍"
+      }
+      heroaca.onclick = function() {
+        display.textContent = "不正解！でも毎週読んでるよ"
+      }
+    </script>
+  </body>
+</html>
