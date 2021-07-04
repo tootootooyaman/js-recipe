@@ -42,31 +42,56 @@
     </div>
 
     <div>------解説ゾーン------</div>
-    <!-- 
-    <button id="nice-button">クリックしてね</button> -->
-
+    <!-- <button id="nice-button">クリックしてね</button>
     <h2>問題！ででん！</h2>
     <div id="title">僕の好きな作品はどれでしょう？</div>
     <button id="onepiece">ワンピース</button>
     <button id="kingdom">キングダム</button>
     <button id="heroaca">ヒロアカ</button>
-    <div id="display"></div>
+    <div id="display"></div> -->
 
     <script>
-      const onepiece = document.getElementById("onepiece")
-      const kingdom = document.getElementById("kingdom")
-      const heroaca = document.getElementById("heroaca")
-      const display = document.getElementById("display")
+      //   const onepiece = document.getElementById("onepiece")
+      //   const kingdom = document.getElementById("kingdom")
+      //   const heroaca = document.getElementById("heroaca")
+      //   const display = document.getElementById("display")
 
-      onepiece.onclick = function() {
-        display.textContent = "不正解！でも嫌いじゃないよ"
+      //   onepiece.onclick = function() {
+      //     display.textContent = "不正解！でも嫌いじゃないよ"
+      //   }
+      //   kingdom.onclick = function() {
+      //     display.textContent = "正解！推しは桓騎将軍"
+      //   }
+      //   heroaca.onclick = function() {
+      //     display.textContent = "不正解！でも毎週読んでるよ"
+      //   }
+
+      const Name = {
+        name: "名前", //String型文字列
+        university: "大学",
+        age: 20, //Number型　数値
+        hobby: ["好きなモノ1", "好きなモノ2"], //配列array
+        familly: {
+          papa: "父",
+          mama: "母",
+        },
+        isMentor: false, //boolean型: true/false
+        sayHello: function() {
+          alert(`こんにちは${this.name}です!!`)
+        },
+      } //オブジェクト{キーkey: 値value}
+
+      //   if ("hello") {
+      //     console.log("hello")
+      //   }
+
+      const hello = function(name) {
+        console.log(name)
+        console.log(Name.hobby[1])
       }
-      kingdom.onclick = function() {
-        display.textContent = "正解！推しは桓騎将軍"
-      }
-      heroaca.onclick = function() {
-        display.textContent = "不正解！でも毎週読んでるよ"
-      }
+
+      console.log(Name.name)
+      Name.sayHello()
     </script>
   </body>
 </html>
